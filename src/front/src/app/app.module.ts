@@ -11,6 +11,10 @@ import { AlunoListComponent } from './components/alunos/aluno-list/aluno-list.co
 import { AlunoFormComponent } from './components/alunos/aluno-form/aluno-form.component';
 import { ProfessorFormComponent } from './components/professores/professor-form/professor-form.component';
 import { ProfessorListComponent } from './components/professores/professor-list/professor-list.component';
+import { DisciplinaFormComponent } from './components/disciplinas/disciplina-form/disciplina-form.component';
+import { DisciplinaListComponent } from './components/disciplinas/disciplina-list/disciplina-list.component';
+import { TurmaListComponent } from './components/turmas/turma-list/turma-list.component';
+import { TurmaFormComponent } from './components/turmas/turma-form/turma-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { ProfessorListComponent } from './components/professores/professor-list/
     AlunoListComponent,
     AlunoFormComponent,
     ProfessorFormComponent,
-    ProfessorListComponent
+    ProfessorListComponent,
+    DisciplinaFormComponent,
+    DisciplinaListComponent,
+    TurmaListComponent,
+    TurmaFormComponent
   ],
   imports: [
     BrowserModule,

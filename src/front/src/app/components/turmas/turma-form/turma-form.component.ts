@@ -1,26 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfessorDto } from 'src/app/dto/professor.dto';
-import { professorService } from 'src/app/services/professor.service';
+import { TurmaService } from 'src/app/services/turma.service';
+import { TurmaDTO } from 'src/app/dto/turma.dto';
 import { Router, ActivatedRoute } from '@angular/router';
 
-@Component({
-  selector: 'app-professor-form',
-  templateUrl: './professor-form.component.html',
-  styleUrls: ['./professor-form.component.css']
-})
-export class ProfessorFormComponent implements OnInit{
 
-  professor: ProfessorDto = {
-    nome_prof: '',
-    cod_disciplina: [0],
-    email_prof: '',
-    tel_prof: ''
+@Component({
+  selector: 'app-turma-form',
+  templateUrl: './turma-form.component.html',
+  styleUrls: ['./turma-form.component.css']
+})
+export class TurmaFormComponent implements OnInit{
+
+  turma: TurmaDTO = {
+    nome_turma: '',
+    cod_turma: 0,
+    sala_aula: 0,
   };
 
   edit: boolean = false;
 
   constructor(
-    private professorService: professorService,
+    private turmaService: TurmaService,
     private router: Router,
     private activedRoute: ActivatedRoute
     ){}
@@ -28,11 +28,11 @@ export class ProfessorFormComponent implements OnInit{
   ngOnInit() {
     // const params = this.activedRoute.snapshot.params;
     // if(params){
-    //   this.professorService.getProfessor(params['id'])
+    //   this.turmaService.getTurma(params['id'])
     //   .subscribe({
     //     next: (v) => {
     //      console.log(v);
-    //      this.professor = v;
+    //      this.turma = v;
     //      this.edit = true
     //     },
     //     error: (e) => console.log(e),
@@ -41,21 +41,21 @@ export class ProfessorFormComponent implements OnInit{
     // }
   }
 
-  submitProfessor(){
-    this.professorService.createProfessor(this.professor)
+  submitTurma(){
+    this.turmaService.createTurma(this.turma)
     .subscribe({
       next: (v) => {
         console.log(v);
-        this.router.navigate(['/professor'])
+        this.router.navigate(['/turma'])
       },
       error: (e) => console.log(e),
       complete: () => console.log('complete')
     })
   }
 
-  updateProfessor(){
-    delete this.professor.id;
-    this.professorService.updateProfessor(this.professor.id!, this.professor)
+  updateTurma(){
+    delete this.turma.id;
+    this.turmaService.updateTurma(this.turma.id!, this.turma)
     .subscribe({
       next: (v) => {
         console.log(v);

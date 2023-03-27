@@ -6,7 +6,7 @@ import { TurmaService } from './turma.service';
 export class TurmaController {
   constructor(private readonly turmaService: TurmaService) {}
 
-  @Post()
+  @Post('/create')
   async create(@Body() body: TurmaDTO){
     return this.turmaService.create(body)
   }
@@ -21,12 +21,12 @@ export class TurmaController {
     return await this.turmaService.findOne(id)
   }
 
-  @Put("/:id")
+  @Put("edit/:id")
   async update(@Param("id") id: string, @Body() data: TurmaDTO){
     return this.turmaService.update(id, data)
   }
 
-  @Delete("/:id")
+  @Delete("delete/:id")
   async delete(@Param("id") id: string){
     return this.turmaService.delete(id)
   }

@@ -24,8 +24,8 @@ export class ProfessorListComponent implements OnInit{
     })
   }
 
-  deleteAluno(cod_aluno: string){
-    this.professorService.deleteProfessor(cod_aluno)
+  deleteAluno(id: string){
+    this.professorService.deleteProfessor(id)
       .subscribe({
       next: (v) => {
         this.getProfessors()

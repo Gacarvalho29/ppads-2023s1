@@ -1,0 +1,26 @@
+<div *ngFor="let turma of turmas" class="card card-body mb-2">
+  <div class="row">
+    <div class="col-md-8">
+      <ul>
+        <li>
+          id:{{ turma.id }}
+        </li>
+        <li>
+          name: {{ turma.nome_turma }}
+        </li>
+        <li>
+          turma: {{ turma.cod_turma }}
+        </li>
+        <li>
+          sala: {{ turma.sala_aula }}
+        </li>
+      </ul>
+      <button class="btn btn-danger" (click)="deleteTurma(turma.id!)">
+        Apagar
+      </button>
+      <button class="btn btn-secondary" [routerLink]="['/turma/edit', turma.id]">
+        Edit (in progress)
+      </button>
+    </div>
+  </div>
+</div>

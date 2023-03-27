@@ -6,7 +6,7 @@ import { DisciplinaService } from './disciplina.service';
 export class DisciplinaController {
   constructor(private readonly disciplinaService: DisciplinaService) {}
 
-  @Post()
+  @Post('/create')
   async create(@Body() body: DisciplinaDTO){
     return this.disciplinaService.create(body)
   }
@@ -21,12 +21,12 @@ export class DisciplinaController {
     return await this.disciplinaService.findOne(id)
   }
 
-  @Put("/:id")
+  @Put("edit/:id")
   async update(@Param("id") id: string, @Body() data: DisciplinaDTO){
     return this.disciplinaService.update(id, data)
   }
 
-  @Delete("/:id")
+  @Delete("delete/:id")
   async delete(@Param("id") id: string){
     return this.disciplinaService.delete(id)
   }
