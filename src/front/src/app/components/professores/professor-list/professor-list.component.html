@@ -1,0 +1,29 @@
+<div *ngFor="let professor of professors" class="card card-body mb-2">
+  <div class="row">
+    <div class="col-md-8">
+      <ul>
+        <li>
+          id:{{ professor.id }}
+        </li>
+        <li>
+          name: {{ professor.nome_prof }}
+        </li>
+        <li>
+          disciplina: {{ professor.cod_disciplina }}
+        </li>
+        <li> 
+          email: {{ professor.email_prof }}
+        </li>
+        <li>
+          telefone: {{ professor.tel_prof }}
+        </li>
+      </ul>
+      <button class="btn btn-danger" (click)="deleteAluno(professor.id!)">
+        Apagar
+      </button>
+      <button class="btn btn-secondary" [routerLink]="['/professor/edit', professor.id]">
+        Edit (in progress)
+      </button>
+    </div>
+  </div>
+</div>

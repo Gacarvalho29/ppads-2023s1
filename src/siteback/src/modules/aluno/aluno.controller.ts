@@ -6,7 +6,7 @@ import { AlunoService } from './aluno.service';
 export class AlunoController {
   constructor(private readonly alunoService: AlunoService) {}
 
-  @Post()
+  @Post('/create')
   async create(@Body() body: AlunoDto){
     return this.alunoService.create(body)
   }
@@ -21,12 +21,12 @@ export class AlunoController {
     return await this.alunoService.findOne(id)
   }
 
-  @Put("/:id")
+  @Put("edit/:id")
   async update(@Param("id") id: string, @Body() data: AlunoDto){
     return this.alunoService.update(id, data)
   }
 
-  @Delete("/:id")
+  @Delete("delete/:id")
   async delete(@Param("id") id: string){
     return this.alunoService.delete(id)
   }

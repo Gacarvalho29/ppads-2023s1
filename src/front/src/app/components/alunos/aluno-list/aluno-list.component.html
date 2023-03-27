@@ -1,0 +1,29 @@
+<div *ngFor="let aluno of alunos" class="card card-body mb-2">
+  <div class="row">
+    <div class="col-md-8">
+      <ul>
+        <li>
+          id:{{ aluno.cod_aluno }}
+        </li>
+        <li>
+          name: {{ aluno.nome_aluno }}
+        </li>
+        <li>
+          turma: {{ aluno.cod_turma }}
+        </li>
+        <li> 
+          responsavel: {{ aluno.cod_resp }}
+        </li>
+        <li>
+          dataNasc: {{ aluno.data_nasc }}
+        </li>
+      </ul>
+      <button class="btn btn-danger" (click)="deleteAluno(aluno.cod_aluno!)">
+        Apagar
+      </button>
+      <button class="btn btn-secondary" [routerLink]="['/aluno/edit', aluno.cod_aluno]">
+        Edit (in progress)
+      </button>
+    </div>
+  </div>
+</div>

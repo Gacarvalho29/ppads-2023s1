@@ -7,7 +7,7 @@ import { ProfessorService } from './professor.service';
 export class ProfessorController {
   constructor(private readonly professorService: ProfessorService) {}
 
-  @Post()
+  @Post('/create')
   async create(@Body() body: ProfessorDTO){
     return this.professorService.create(body)
   }
@@ -22,12 +22,12 @@ export class ProfessorController {
     return await this.professorService.findOne(id)
   }
 
-  @Put("/:id")
+  @Put("edit/:id")
   async update(@Param("id") id: string, @Body() data: ProfessorDTO){
     return this.professorService.update(id, data)
   }
 
-  @Delete("/:id")
+  @Delete("delete/:id")
   async delete(@Param("id") id: string){
     return this.professorService.delete(id)
   }

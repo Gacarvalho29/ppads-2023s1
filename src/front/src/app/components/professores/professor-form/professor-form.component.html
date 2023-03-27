@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-sm4 offset-md-4">
+    <div class="card card-body">
+      <form (submit)="edit ? updateProfessor() : submitProfessor()">
+        <div class="form-group">
+          <input type="text" name="nome_prof" [(ngModel)]="professor.nome_prof" class="form-control" placeholder="Nome do Professor" autofocus>
+        </div>
+        <div class="form-group">
+          <input type="number" name="cod_disc" [(ngModel)]="professor.cod_disciplina" class="form-control" placeholder="Código da Disciplina" autofocus>
+        </div>
+        <div class="form-group">
+          <input type="number" name="email_prof" [(ngModel)]="professor.email_prof" class="form-control" placeholder="Código do responsavel" autofocus>
+        </div>
+        <div class="form-group">
+          <input type="text" name="tel_pro" [(ngModel)]="professor.tel_prof" class="form-control" placeholder="Telefone do Professor" autofocus>
+        </div>
+        <button class="btn btn-primary btn-block">
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
