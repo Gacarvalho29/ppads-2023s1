@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-sm-4 offset-md-4">
+    <div class="card card-body">
+      <form (submit)="submitAluno()">
+        <div class="form-group">
+          <input type="text" name="name" [(ngModel)]="aluno.nome_aluno" class="form-control" placeholder="Nome do Aluno" autofocus>
+        </div>
+        <div class="form-group">
+          <input type="number" name="Codigo da Turma" [(ngModel)]="aluno.cod_turma" class="form-control" placeholder="Código da turma do Aluno">
+        </div>
+        <div class="form-group">
+          <input type="number" name="Código do Responsavel" [(ngModel)]="aluno.cod_resp" class="form-control" placeholder="Código do Responsavel">
+        </div>
+        <div class="form-group">
+          <input type="text" name="Data de Nascimento" [(ngModel)]="aluno.data_nasc" class="form-control" placeholder="2002-08-29">
+        </div>
+        <button class="btn btn-primary btn-block">
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
