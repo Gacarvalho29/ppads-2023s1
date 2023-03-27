@@ -6,7 +6,7 @@ import { TurmaService } from './turma.service';
 export class TurmaController {
   constructor(private readonly turmaService: TurmaService) {}
 
-  @Post('/create')
+  @Post('create')
   async create(@Body() body: TurmaDTO){
     return this.turmaService.create(body)
   }

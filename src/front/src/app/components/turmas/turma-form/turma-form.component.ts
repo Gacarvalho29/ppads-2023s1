@@ -59,7 +59,7 @@ export class TurmaFormComponent implements OnInit{
     .subscribe({
       next: (v) => {
         console.log(v);
-        this.router.navigate(['/professor'])
+        this.router.navigate(['/turma'])
       },
       error: (e) => console.log(e),
       complete: () => console.log('complete')
