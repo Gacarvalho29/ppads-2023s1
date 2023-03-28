@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class AlunoService {
 
-  BASE_URL: string = 'http://localhost:3000';
+  BASE_URL: string = 'http://18.229.143.132';
 
   constructor(private http: HttpClient) { }
 
