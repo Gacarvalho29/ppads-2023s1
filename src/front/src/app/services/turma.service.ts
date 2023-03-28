@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class TurmaService {
 
-  BASE_URL: string = 'https://18.229.143.132';
+  BASE_URL: string = 'http://18.229.143.132';
 
   constructor(private http: HttpClient) { }
 
