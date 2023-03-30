@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class DisciplinaService {
 
-  BASE_URL: string = 'https://ppads-2023s1-production.up.railway.app/';
+  BASE_URL: string = 'https://ppads-2023s1-production.up.railway.app';
 
   constructor(private http: HttpClient) { }
 
