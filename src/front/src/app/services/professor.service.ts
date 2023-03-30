@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class professorService {
 
-  BASE_URL: string = 'http://18.229.143.132';
+  BASE_URL: string = 'https://ppads-2023s1-production.up.railway.app/';
 
   constructor(private http: HttpClient) { }
 
