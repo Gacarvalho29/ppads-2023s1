@@ -45,6 +45,18 @@ O professor acessa o sistema para registrar a presença dos alunos na sala de au
 O sistema apresenta a lista de alunos matriculados na turma.
 O professor marca a presença dos alunos ausentes ou tardios.
 O sistema registra a presença dos alunos e atualiza a lista de presença.
+  
+**Fluxo Alternativo:**
+  
+ 1.1. O professor acessa o sistema fora do horãrio da aula
+  
+ 1.2. Insere a data e horário da aula
+  
+ 1.3. O sistema apresenta a lista de alunos matriculados na turma.
+  
+ 1.4. O professor marca a presença dos alunos ausentes ou tardios.
+  
+ 1.5. O sistema registra a presença dos alunos e atualiza a lista de presença.
 
 
 **2. Gerar Relatório Diário:**  
