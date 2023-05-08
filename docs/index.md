@@ -29,7 +29,7 @@ Gustavo Direnzi - 31948421 <br>*
 
 # Descrição do projeto
 
-Um sistema de presenças para a escola Octógono<br>
+Este projeto visa resolver o problema da organização do processo de chamada na escola Octógono. Com o objetivo de facilitar o trabalho dos professores e aumentar a eficiência da chamada, o sistema de chamada foi desenvolvido para ser utilizado pelos docentes da escola. Destina-se ao público interno da escola, ou seja, professores e alunos, com a finalidade de tornar a rotina escolar mais dinâmica e produtiva. Com este sistema, a Octógono espera melhorar a experiência dos professores e alunos no ambiente escolar.<br>
 <a href="https://ppads-site-presenca-2023.s3.sa-east-1.amazonaws.com/turma">Site-Presença
 
 # Diagrama de casos de uso
