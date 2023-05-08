@@ -3,7 +3,7 @@
 
 
 <font size="+12"><center>
-Escola Octeto
+Escola Octogono
 </center></font>
 
 **Conteúdo**
@@ -29,7 +29,7 @@ Gustavo Direnzi - 31948421 <br>*
 
 # Descrição do projeto
 
-Um sistema de presenças para a escola Octógono
+Um sistema de presenças para a escola Octógono<br>
 <a href="https://ppads-site-presenca-2023.s3.sa-east-1.amazonaws.com/turma">Site-Presença
 
 # Diagrama de casos de uso
