@@ -55,11 +55,17 @@ O professor seleciona a turma para a qual deseja gerar o relatório.
 O sistema apresenta o relatório com as informações sobre a presença dos alunos na turma.
 
 **Fluxo Alternativo:**
+  
 2.1 Caso o professor queira gerar o relatório para uma disciplina específica, o sistema apresenta as opções de escolha das disciplinas para aquela turma selecionada.
+  
 2.2 O professor seleciona a disciplina para a qual deseja gerar o relatório.
+  
 2.3 O sistema apresenta o relatório com as informações sobre a presença dos alunos naquela disciplina na turma selecionada.
+  
 2.4 Caso o professor queira gerar o relatório para um aluno específico, o sistema apresenta as opções de escolha dos alunos na turma e na disciplina selecionadas.
+
 2.5 O professor seleciona o aluno para o qual deseja gerar o relatório.
+
 2.6 O sistema apresenta o relatório com as informações sobre a presença daquele aluno na turma e na disciplina selecionadas.
 
 **3. Gerenciar Salas de Aula:**
