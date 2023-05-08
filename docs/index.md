@@ -34,7 +34,7 @@ Este projeto visa resolver o problema da organização do processo de chamada na
 
 # Diagrama de casos de uso
 
-![image](https://user-images.githubusercontent.com/85083155/221701544-919bfd2d-9c46-4c2e-a7c0-e8f778cb759a.png)
+![image](https://user-images.githubusercontent.com/85353380/236956287-a305d6ff-1e0b-4723-b44c-60fb510c7107.png)
 
 # Descrição dos casos de uso
 
