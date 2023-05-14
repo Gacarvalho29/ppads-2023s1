@@ -3,12 +3,8 @@
 
 
 <font size="+12"><center>
-*&lt;Nome do Projeto&gt;*
+Escola Octogono
 </center></font>
-
->*Observação 1: A estrutura inicial deste documento é só um exemplo. O seu grupo deverá alterar esta estrutura de acordo com o que está sendo solicitado na disciplina.*
-
->*Observação 2: O índice abaixo não precisa ser editado se você utilizar o Visual Studio Code com a extensão **Markdown All in One**. Essa extensão atualiza o índice automaticamente quando o arquivo é salvo.*
 
 **Conteúdo**
 
@@ -26,36 +22,63 @@
 # Autores
 
 *Arthur Hardt - 32159341 <br>
-Gabriel Carvalho - <br>
+Gabriel Carvalho - 32142293 <br>
 Gustavo Carmassi - 32046693 <br>
 Gustavo Direnzi - 31948421 <br>*
 
 
 # Descrição do projeto
 
-Um sistema de presenças para a escola Octógono
+Este projeto visa resolver o problema da organização do processo de chamada na escola Octógono. Com o objetivo de facilitar o trabalho dos professores e aumentar a eficiência da chamada, o sistema de chamada foi desenvolvido para ser utilizado pelos docentes da escola. Destina-se ao público interno da escola, ou seja, professores e alunos, com a finalidade de tornar a rotina escolar mais dinâmica e produtiva. Com este sistema, a Octógono espera melhorar a experiência dos professores e alunos no ambiente escolar.<br>
 <a href="https://ppads-site-presenca-2023.s3.sa-east-1.amazonaws.com/turma">Site-Presença
 
 # Diagrama de casos de uso
 
-![image](https://user-images.githubusercontent.com/85083155/221701544-919bfd2d-9c46-4c2e-a7c0-e8f778cb759a.png)
+![image](https://user-images.githubusercontent.com/85353380/236956287-a305d6ff-1e0b-4723-b44c-60fb510c7107.png)
+  
+<!-- https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#R3VjbcpswEP0aPzYDFjj2o29NO5POeOrONM2bArJRKlhGiBjy9V0ZmYtxnGSSFFo%2FYO1hhaRzVruIAZmH2ZWkcfANfCYGQ8vPBmQxGA5ty7XwTyN5gbhjuwC2kvvGqQLW%2FJEdeho05T5LGo4KQCgeN0EPooh5qoFRKWHXdNuAaI4a0y1rAWuPijb6k%2FsqKNDx8LLCvzC%2BDQ4j26NJcSekB2ezkiSgPuxqEFkOyFwCqKIVZnMmNHkHXop%2Bn5%2B4W05Mski9pMPvr74dLzLlZ7f33tpa%2F3j0Z5%2FMMh6oSM2CzWRVfmBgF3DF1jH1tL1DlQdkFqhQoGVjkyZxwfuGZwyHmpknMqlY9uRU7ZIAjBwGIVMyRxfTYXiIGhM0jjF3lQKuZbCgxn4JUqP6tnx0RQw2DDev4Mm%2BbPHCfAwUY4JUAWwhomJZoTMJaeRrThYWWpXPNUBs2LtnSuUm6mmqoMkty7i6qbV%2F6UddkKOfubnIzEB7I68ZKyY50sCkwYql6Pmf1weXC6n02DlezJakcsvUOT%2FrtOCSCar4Q3Mi76%2FeuEv1rAu3oZ%2F7TwjmdirYpC%2FbzX61WCiJzG%2FqRk12bVaP2lt5hyKP3ijyvutUSprXHGLgkUpqT15poJbdSTO72%2BOjwvWM%2F7Dpj41iBlW4lUt5QwS2CuNKwoYlCchWaGJlj3UzDcXUU%2BhAZrr8cXyLuKZ3TKwg4YpDhC53oBSENYep4Ft9Q8FRXYVUCR6xefleU8XIm2qr7RyxP2wXV3Kito4%2BrLSSvuz1fpVW54WbeNJponb6It7rE3UHWo27yLfEcptv0%2Fb5fNvyPz5YHPmXb92n%2FT8mPzut%2FDz1Qx7xREk8Zkl94gS8rBFgIf2%2FUjZxO07Z4xb5VwwX43GqiU%2BowBFRAKbHTkWbfRwCz%2B86FTxzuHwH8pwj8pwTh8myBtbZG38Ue5Oz7PFoAxIjdk4G00t9nblszyboK%2FaJIOkVoYR0TejhW1GN0e%2BMCv64J9QLaEj9fgXhqHPK3FNBuOdrX4xAcugVY%2FaJnPeXKRu1KFtGD8WmjUDxDdaGatdOSb%2F4O%2FUN7b34Q7P6jFkU%2BOpjMFn%2BAQ%3D%3D -->
 
 # Descrição dos casos de uso
-
+  
 **1. Realizar Chamada:**
 O professor acessa o sistema para registrar a presença dos alunos na sala de aula.
 O sistema apresenta a lista de alunos matriculados na turma.
 O professor marca a presença dos alunos ausentes ou tardios.
 O sistema registra a presença dos alunos e atualiza a lista de presença.
+  
+**Fluxo Alternativo:**
+  
+ 1.1. O professor acessa o sistema fora do horãrio da aula
+  
+ 1.2. Insere a data e horário da aula
+  
+ 1.3. O sistema apresenta a lista de alunos matriculados na turma.
+  
+ 1.4. O professor marca a presença dos alunos ausentes ou tardios.
+  
+ 1.5. O sistema registra a presença dos alunos e atualiza a lista de presença.
 
 
-**2. Gerar Relatório Diário:**
+**2. Gerar Relatório Diário:**  
 O professor acessa o sistema para gerar um relatório diário sobre a presença dos alunos na 
 turma.
 O sistema apresenta as opções de escolha das turmas (sala de aula).
 O professor seleciona a turma para a qual deseja gerar o relatório.
 O sistema apresenta o relatório com as informações sobre a presença dos alunos na turma.
 
+**Fluxo Alternativo:**
+  
+2.1 Caso o professor queira gerar o relatório para uma disciplina específica, o sistema apresenta as opções de escolha das disciplinas para aquela turma selecionada.
+  
+2.2 O professor seleciona a disciplina para a qual deseja gerar o relatório.
+  
+2.3 O sistema apresenta o relatório com as informações sobre a presença dos alunos naquela disciplina na turma selecionada.
+  
+2.4 Caso o professor queira gerar o relatório para um aluno específico, o sistema apresenta as opções de escolha dos alunos na turma e na disciplina selecionadas.
+
+2.5 O professor seleciona o aluno para o qual deseja gerar o relatório.
+
+2.6 O sistema apresenta o relatório com as informações sobre a presença daquele aluno na turma e na disciplina selecionadas.
 
 **3. Gerenciar Salas de Aula:**
 O professor acessa o sistema para gerenciar as informações sobre as salas de aula.
