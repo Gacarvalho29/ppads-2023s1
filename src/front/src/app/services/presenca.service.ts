@@ -8,8 +8,8 @@ import { PresencaDTO } from '../dto/presenca.dto';
 })
 export class PresencaService {
 
-  // BASE_URL: string = 'https://ppads-2023s1-production.up.railway.app';
-  BASE_URL: string = 'http://localhost:3000';
+  BASE_URL: string = 'ppads-2023s1-production-ad71.up.railway.app';
+  // BASE_URL: string = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
