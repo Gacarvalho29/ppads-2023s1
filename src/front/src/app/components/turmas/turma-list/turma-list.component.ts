@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TurmaService } from 'src/app/services/turma.service';
+import { AlunoService } from 'src/app/services/aluno.service';
 import { TurmaDTO } from 'src/app/dto/turma.dto';
+import { AlunoDto } from 'src/app/dto/aluno.dto';
 
 @Component({
   selector: 'app-turma-list',
@@ -11,7 +13,7 @@ export class TurmaListComponent implements OnInit{
 
   turmas: TurmaDTO[] = [];
 
-  constructor(private turmaService: TurmaService){}
+  constructor(private turmaService: TurmaService, private alunoService: AlunoService){}
 
   getTurmas(){
     this.turmaService.getTurmas()

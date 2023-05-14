@@ -24,8 +24,8 @@ export class DisciplinaListComponent implements OnInit{
     })
   }
 
-  deleteDisciplina(cod_aluno: string){
-    this.disciplinaService.deleteDisciplina(cod_aluno)
+  deleteDisciplina(id: string){
+    this.disciplinaService.deleteDisciplina(id)
       .subscribe({
       next: (v) => {
         this.getDisciplinas()

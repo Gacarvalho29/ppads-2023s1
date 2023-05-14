@@ -13,7 +13,6 @@ export class AlunoService {
     const aluno = await this.prisma.aluno.create({
       data,
     });
-
     return aluno;
   }
 
@@ -64,4 +63,42 @@ export class AlunoService {
     });
 
   }
+
+  async addPresenca(cod_aluno: string) {
+    const aluno = await this.prisma.aluno.findUnique({
+      where: { cod_aluno },
+    });
+    if (!aluno) {
+      throw new NotFoundException('Aluno não encontrado');
+    }
+    const presenca = await this.prisma.presenca.create({
+      data: {
+        cod_aluno,
+        cod_disciplina:1,
+        data_presenca: new Date(),
+        status: 'presente',
+      },
+    });
+    return presenca;
+  }
+  
+  async addFalta(cod_aluno: string) {
+    const aluno = await this.prisma.aluno.findUnique({
+      where: { cod_aluno },
+    });
+    if (!aluno) {
+      throw new NotFoundException('Aluno não encontrado');
+    }
+    const falta = await this.prisma.presenca.create({
+      data: {
+        cod_aluno,
+        cod_disciplina: 1,
+        data_presenca: new Date(),
+        status: 'falta',
+      },
+    });
+    return falta;
+  }
+  
+  
 }

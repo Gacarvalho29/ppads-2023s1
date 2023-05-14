@@ -30,4 +30,15 @@ export class AlunoController {
   async delete(@Param("id") id: string){
     return this.alunoService.delete(id)
   }
+
+  @Post('presenca/:cod_aluno')
+  async addPresenca(@Param('cod_aluno') cod_aluno: string) {
+    return this.alunoService.addPresenca(cod_aluno);
+  }
+
+  @Post('falta/:cod_aluno')
+  async addFalta(@Param('cod_aluno') cod_aluno: string) {
+    return this.alunoService.addFalta(cod_aluno);
+  }
+
 }

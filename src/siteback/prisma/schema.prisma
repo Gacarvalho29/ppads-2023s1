@@ -82,7 +82,7 @@ model Aula {
 
 model Presenca {
   id             String   @unique @default(uuid())
-  cod_aluno      Int
+  cod_aluno      String
   cod_disciplina Int
   data_presenca  DateTime
   status         String

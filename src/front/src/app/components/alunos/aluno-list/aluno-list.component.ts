@@ -31,9 +31,32 @@ export class AlunoListComponent implements OnInit{
         this.getAlunos()
       },
       error: (e) => console.log(e),
+      complete: () => window.alert("Aluno Deletado")
+    })
+  }
+
+  addPresenca(cod_aluno: string) {
+    this.alunoService.addPresenca(cod_aluno)
+    .subscribe({
+      next: (v) => {
+        this.getAlunos()
+      },
+      error: (e) => console.log(e),
       complete: () => console.log('complete')
     })
   }
+  
+  addFalta(cod_aluno: string) {
+    this.alunoService.addFalta(cod_aluno)
+    .subscribe({
+      next: (v) => {
+        this.getAlunos()
+      },
+      error: (e) => console.log(e),
+      complete: () => console.log('complete')
+    })
+  }
+  
 
   ngOnInit(){
     this.getAlunos()
