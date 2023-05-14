@@ -124,7 +124,16 @@ frequência escolar.
 
 Vamos utilizar para fazer o front-end as linguagens HTML, CSS e JavaScript junto com o framework do AngularJS e para o backend iremos usar NestJs.
 Para o banco de dados será usado o ElephantSQL.
+  
+![image](https://github.com/Carmassi/ppads-2023s1/assets/85353380/1159a8bb-b1b7-4591-9025-84dc9c11a25e)
+
 
 # Referências
 
-*&lt;Lista de referências&gt;*
+Foram utilizada como referência os links abaixo:
+
+* https://www.youtube.com/watch?v=Osc6rFCtl4A&pp=ygUSQW5ndWxhckpTIGUgTmVzdEpT&ab_channel=F%C3%A1bricadeC%C3%B3digo
+* https://www.youtube.com/watch?v=LFlNU30u7d8&pp=ygUSQW5ndWxhckpTIGUgTmVzdEpT&ab_channel=Alura
+* https://www.youtube.com/watch?v=_ZsECW9rkJI&ab_channel=nivek
+* https://www.youtube.com/watch?v=y24fC9Pqr8I&ab_channel=DigitalFluency
+* https://www.youtube.com/watch?v=5pFKw5iLL4s&list=PLVfq1luIZbSmJIuw_EZVP9mFiMED5fGIn&ab_channel=ThomasOliver
