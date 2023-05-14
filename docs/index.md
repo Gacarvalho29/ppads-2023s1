@@ -118,7 +118,7 @@ frequência escolar.
 
 # Modelo de domínio
 
-![image](https://user-images.githubusercontent.com/85083155/223229559-1b47ea57-d12d-4514-9d42-978872c97f5f.png)
+![image](https://github.com/Carmassi/ppads-2023s1/assets/85353380/7aa7f9ad-f4c4-4b8e-bacf-b540fc960e49)
 
 # Decisões de arquitetura
 
