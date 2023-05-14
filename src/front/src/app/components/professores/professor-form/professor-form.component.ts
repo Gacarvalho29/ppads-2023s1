@@ -12,7 +12,7 @@ export class ProfessorFormComponent implements OnInit{
 
   professor: ProfessorDto = {
     nome_prof: '',
-    cod_disciplina: [0],
+    cod_disciplina: undefined,
     email_prof: '',
     tel_prof: ''
   };

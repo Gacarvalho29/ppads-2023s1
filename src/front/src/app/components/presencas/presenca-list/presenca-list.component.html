@@ -1,0 +1,28 @@
+<h1>Lista de Presença</h1>
+
+<div *ngFor="let presenca of presencas" class="card card-body mb-2">
+  <div class="row">
+    <div class="col-md-8">
+      <ul>
+        <li>
+          id: {{ presenca.id }}
+        </li>
+        <li>
+          cod_aluno:{{ presenca.cod_aluno }}
+        </li>
+        <li>
+          cod_disciplina: {{ presenca.cod_disciplina }}
+        </li>
+        <li>
+          data: {{ presenca.data_presenca }}
+        </li>
+        <li> 
+          Status: {{ presenca.status }}
+        </li>
+      </ul>
+      <button class="btn btn-danger" (click)="deletePresenca(presenca.id!)">
+        Apagar
+      </button>
+    </div>
+  </div>
+</div>

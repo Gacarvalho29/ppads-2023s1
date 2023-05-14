@@ -12,8 +12,8 @@ export class AlunoFormComponent implements OnInit{
 
   aluno: AlunoDto = {
     nome_aluno: '',
-    cod_turma: 0,
-    cod_resp:0,
+    cod_turma: undefined,
+    cod_resp: undefined,
     data_nasc: ''
   };
 

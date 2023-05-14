@@ -13,6 +13,8 @@ import { DisciplinaFormComponent } from './components/disciplinas/disciplina-for
 import { TurmaListComponent } from './components/turmas/turma-list/turma-list.component';
 import { TurmaFormComponent } from './components/turmas/turma-form/turma-form.component';
 
+import { PresencaListComponent } from './components/presencas/presenca-list/presenca-list.component';
+
 const routes: Routes = [
   {
     //trocar para login futuramente
@@ -75,6 +77,12 @@ const routes: Routes = [
     path: 'turma/edit/:id',
     component: TurmaFormComponent
   },
+
+  //PRESENCAS
+  {
+    path: 'presenca',
+    component: PresencaListComponent
+  }
 ];
 
 

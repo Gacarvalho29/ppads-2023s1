@@ -13,8 +13,8 @@ export class TurmaFormComponent implements OnInit{
 
   turma: TurmaDTO = {
     nome_turma: '',
-    cod_turma: 0,
-    sala_aula: 0,
+    cod_turma: undefined,
+    sala_aula: undefined,
   };
 
   edit: boolean = false;
