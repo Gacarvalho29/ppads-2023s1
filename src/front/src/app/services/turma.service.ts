@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class TurmaService {
 
-  BASE_URL: string = 'ppads-2023s1-production-ad71.up.railway.app';
+  BASE_URL: string = 'https://ppads-2023s1-production-ad71.up.railway.app';
   // BASE_URL: string = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
