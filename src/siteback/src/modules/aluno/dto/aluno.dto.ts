@@ -4,5 +4,5 @@ export type AlunoDto = {
   cod_turma: number;
   cod_resp: number;
   nome_aluno: string;
-  data_nasc: string;
+  data_nasc: Date;
 }
