@@ -42,7 +42,7 @@ export class AlunoListComponent implements OnInit{
         this.getAlunos()
       },
       error: (e) => console.log(e),
-      complete: () => console.log('complete')
+      complete: () => window.alert('Presença Adicionada com sucesso!')
     })
   }
   
@@ -53,7 +53,7 @@ export class AlunoListComponent implements OnInit{
         this.getAlunos()
       },
       error: (e) => console.log(e),
-      complete: () => console.log('complete')
+      complete: () => window.alert('Falta Adicionada com sucesso!')
     })
   }
   

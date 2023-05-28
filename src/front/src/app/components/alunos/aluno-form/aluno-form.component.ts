@@ -17,16 +17,17 @@ export class AlunoFormComponent implements OnInit{
     data_nasc: ''
   };
 
+
   edit: boolean = false;
 
   constructor(
     private alunoService: AlunoService,
     private router: Router,
-    private activedRoute: ActivatedRoute
-    ){}
+    private activedRoute: ActivatedRoute,
+    ){} 
 
   ngOnInit() {
-    const params = this.activedRoute.snapshot.params;
+    // const params = this.activedRoute.snapshot.params;
     // if(params){
     //   this.alunoService.getAluno(params['id'])
     //   .subscribe({
