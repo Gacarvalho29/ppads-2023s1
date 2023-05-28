@@ -15,11 +15,26 @@ import { TurmaFormComponent } from './components/turmas/turma-form/turma-form.co
 
 import { PresencaListComponent } from './components/presencas/presenca-list/presenca-list.component';
 
+import { HomeComponent } from './components/home/home.component';
+import { CoordMenuComponent } from './components/coord-menu/coord-menu.component';
+import { ProfMenuComponent } from './components/prof-menu/prof-menu.component';
+
+
+
 const routes: Routes = [
   {
     //trocar para login futuramente
     path: '',
-    component: AlunoListComponent
+    component: HomeComponent
+  },
+  //Menu coordenador
+  {
+    path:'coordmenu',
+    component: CoordMenuComponent
+  },
+  {
+    path: 'profmenu',
+    component: ProfMenuComponent
   },
 
   //ALUNO

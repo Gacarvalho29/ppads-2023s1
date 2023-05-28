@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +16,9 @@ import { DisciplinaListComponent } from './components/disciplinas/disciplina-lis
 import { TurmaListComponent } from './components/turmas/turma-list/turma-list.component';
 import { TurmaFormComponent } from './components/turmas/turma-form/turma-form.component';
 import { PresencaListComponent } from './components/presencas/presenca-list/presenca-list.component';
+import { HomeComponent } from './components/home/home.component';
+import { CoordMenuComponent } from './components/coord-menu/coord-menu.component';
+import { ProfMenuComponent } from './components/prof-menu/prof-menu.component';
 
 @NgModule({
   declarations: [
@@ -30,14 +32,16 @@ import { PresencaListComponent } from './components/presencas/presenca-list/pres
     DisciplinaListComponent,
     TurmaListComponent,
     TurmaFormComponent,
-    PresencaListComponent
+    PresencaListComponent,
+    HomeComponent,
+    CoordMenuComponent,
+    ProfMenuComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
