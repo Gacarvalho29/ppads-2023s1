@@ -34,7 +34,7 @@ Este projeto visa resolver o problema da organização do processo de chamada na
 
 # Diagrama de casos de uso
 
-![image](https://github.com/Carmassi/ppads-2023s1/assets/85353380/8c2f015e-1c4c-420e-8594-61096634ec2c)
+![image](https://github.com/Carmassi/ppads-2023s1/assets/85353380/c66dc930-99a5-4d28-9a7f-614ef42cb872)
   
 <!-- 
  
