@@ -34,9 +34,13 @@ Este projeto visa resolver o problema da organização do processo de chamada na
 
 # Diagrama de casos de uso
 
-![image](https://user-images.githubusercontent.com/85353380/236956287-a305d6ff-1e0b-4723-b44c-60fb510c7107.png)
+![image](https://github.com/Carmassi/ppads-2023s1/assets/85353380/c66dc930-99a5-4d28-9a7f-614ef42cb872)
   
-<!-- https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#R3VjbcpswEP0aPzYDFjj2o29NO5POeOrONM2bArJRKlhGiBjy9V0ZmYtxnGSSFFo%2FYO1hhaRzVruIAZmH2ZWkcfANfCYGQ8vPBmQxGA5ty7XwTyN5gbhjuwC2kvvGqQLW%2FJEdeho05T5LGo4KQCgeN0EPooh5qoFRKWHXdNuAaI4a0y1rAWuPijb6k%2FsqKNDx8LLCvzC%2BDQ4j26NJcSekB2ezkiSgPuxqEFkOyFwCqKIVZnMmNHkHXop%2Bn5%2B4W05Mski9pMPvr74dLzLlZ7f33tpa%2F3j0Z5%2FMMh6oSM2CzWRVfmBgF3DF1jH1tL1DlQdkFqhQoGVjkyZxwfuGZwyHmpknMqlY9uRU7ZIAjBwGIVMyRxfTYXiIGhM0jjF3lQKuZbCgxn4JUqP6tnx0RQw2DDev4Mm%2BbPHCfAwUY4JUAWwhomJZoTMJaeRrThYWWpXPNUBs2LtnSuUm6mmqoMkty7i6qbV%2F6UddkKOfubnIzEB7I68ZKyY50sCkwYql6Pmf1weXC6n02DlezJakcsvUOT%2FrtOCSCar4Q3Mi76%2FeuEv1rAu3oZ%2F7TwjmdirYpC%2FbzX61WCiJzG%2FqRk12bVaP2lt5hyKP3ijyvutUSprXHGLgkUpqT15poJbdSTO72%2BOjwvWM%2F7Dpj41iBlW4lUt5QwS2CuNKwoYlCchWaGJlj3UzDcXUU%2BhAZrr8cXyLuKZ3TKwg4YpDhC53oBSENYep4Ft9Q8FRXYVUCR6xefleU8XIm2qr7RyxP2wXV3Kito4%2BrLSSvuz1fpVW54WbeNJponb6It7rE3UHWo27yLfEcptv0%2Fb5fNvyPz5YHPmXb92n%2FT8mPzut%2FDz1Qx7xREk8Zkl94gS8rBFgIf2%2FUjZxO07Z4xb5VwwX43GqiU%2BowBFRAKbHTkWbfRwCz%2B86FTxzuHwH8pwj8pwTh8myBtbZG38Ue5Oz7PFoAxIjdk4G00t9nblszyboK%2FaJIOkVoYR0TejhW1GN0e%2BMCv64J9QLaEj9fgXhqHPK3FNBuOdrX4xAcugVY%2FaJnPeXKRu1KFtGD8WmjUDxDdaGatdOSb%2F4O%2FUN7b34Q7P6jFkU%2BOpjMFn%2BAQ%3D%3D -->
+<!-- 
+ 
+https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#R7Zldb5swFIZ%2FTS5bAYaEXOZr3bROipZJ23ozuXAa3BqMjEmgv34mmO%2BEpmqzRNt6U%2FvlxMBzjl87zgDN%2FOSG49D7wlygA0NzkwGaDwxDN5Ep%2F2VKmiujoRLWnLgqqBJW5BmUqCk1Ji5EjUDBGBUkbIoOCwJwREPDnLNtM%2ByB0eZdQ7yGjrByMO2q34krvFy1jVGlfwSy9oo768NxfsXHRbB6k8jDLtvWJLQYoBlnTOQtP5kBzeAVXPLPfThwtXwwDoE45gNPn1w9nCfCTe4enZW2%2BvbsTq%2FUa2wwjdULq4cVaUFg6xEBqxA7WX8rszxAU0%2F4VPZ02cRRmHN%2FIAnIW027z6UedQNcQFKT1HPeAPNB8FSGqKuGpZipojFVd1tlYIiU5tXolyJWWV%2BXQ1dgZEOxeQUnfdThAq4sFNVlXHhszQJMF5U65SwO3IzJXJO9KuaWsVDRewQhUlX1OBasyRYSIn7U2j%2Bzoa5R609dnCfqRrtOWussgROJAbjSDmYoYjF3oA%2BDmoGYr0H0xak8ZIx6E86BYkE2zcn2%2Ftmzz5k97dpq5M%2B6xIRZl5Wwji0tOXuAKGK8k0npq2HWjH06cYQMQNPMaYj08Ft8D3TJIiIIC2TIPROC%2BbWACSXr7IJgLVdjsaAkgFm5qvSm4Xhn082ms%2BlG19r2OtvJjA39NzaJwTxynowva5qY%2F6qvHZsv%2B73ztfvohHOc1gJCRgIR1UZeZkJt1o%2Basx7Zra3aS%2FHj%2FnikWW%2BKN9tbx1a8pWl98bKRE6kquUR7VHGHP5zF3VNya042i0X0eTY1Rr%2BKNeBctT1qFrf%2B6uKWNc3TbKwr7VrT7ELJhxvapVCNuOul9d7%2BCdOq5tPOoHxn8Accbm8RXMzq9Ib8a83UWy8k%2FrQ53kvZOIcplvucwlT0fhNqx1v2%2B5pQH8HaRnTGGHchkN%2Fl%2F7KtKLLOvBW1O6xvQL6fQzDPDpBI5JBQksBR1xMoJWGUzf0XDiveAZvZwmbuOZwod%2FV1bvapuI17uYXFFyeIsmMy7OJIcFm9l0URoXNTLI4sahi%2FAqbkeUfR8bAv0V0Us%2BHZkVkdZBOXONLgdsykGlxYmel7PO5kzA4vtQcnq4i5%2F3Z%2F6%2FDZQ%2FEwsmFrmT2hv8ludf6dL9nVrwho8Rs%3D
+
+-->
 
 # Descrição dos casos de uso
   
@@ -58,50 +62,34 @@ O sistema registra a presença dos alunos e atualiza a lista de presença.
   
  1.5. O sistema registra a presença dos alunos e atualiza a lista de presença.
 
-
-**2. Gerar Relatório Diário:**  
-O professor acessa o sistema para gerar um relatório diário sobre a presença dos alunos na 
-turma.
-O sistema apresenta as opções de escolha das turmas (sala de aula).
-O professor seleciona a turma para a qual deseja gerar o relatório.
-O sistema apresenta o relatório com as informações sobre a presença dos alunos na turma.
-
-**Fluxo Alternativo:**
   
-2.1 Caso o professor queira gerar o relatório para uma disciplina específica, o sistema apresenta as opções de escolha das disciplinas para aquela turma selecionada.
-  
-2.2 O professor seleciona a disciplina para a qual deseja gerar o relatório.
-  
-2.3 O sistema apresenta o relatório com as informações sobre a presença dos alunos naquela disciplina na turma selecionada.
-  
-2.4 Caso o professor queira gerar o relatório para um aluno específico, o sistema apresenta as opções de escolha dos alunos na turma e na disciplina selecionadas.
-
-2.5 O professor seleciona o aluno para o qual deseja gerar o relatório.
-
-2.6 O sistema apresenta o relatório com as informações sobre a presença daquele aluno na turma e na disciplina selecionadas.
-
-**3. Gerenciar Salas de Aula:**
-O professor acessa o sistema para gerenciar as informações sobre as salas de aula.
-O sistema apresenta as opções de gerenciamento (adicionar, editar ou excluir informações 
-sobre as salas de aula).
-O professor seleciona a opção desejada e realiza as alterações necessárias.
-O sistema atualiza as informações sobre as salas de aula.
-
-
-**4. Gerenciar Informações dos Alunos:**
-O professor acessa o sistema para gerenciar as informações sobre os alunos matriculados na 
+**2. Gerenciar Alunos:**
+O professor/coordenador acessa o sistema para gerenciar as informações sobre os alunos matriculados na 
 turma.
 O sistema apresenta as opções de gerenciamento (adicionar, editar ou excluir informações 
 sobre os alunos).
-O professor seleciona a opção desejada e realiza as alterações necessárias.
-
-
-**5. Enviar Notificação aos Responsáveis:**
-O sistema verifica a presença dos alunos na turma.
-Se um aluno tiver faltado em mais de 20% das aulas (80% ou menos de presença), o sistema 
-envia uma notificação por e-mail aos responsáveis do aluno.
-O e-mail contém as informações sobre as faltas do aluno e um aviso sobre a importância da 
-frequência escolar.
+O professor/coordenador seleciona a opção desejada e realiza as alterações necessárias.
+  
+**3. Gerenciar professores cadastrados:**
+O coordenador acessa o sistema para gerenciar as informações sobre os professores cadastrados.
+O sistema apresenta as opções de gerenciamento (adicionar, editar ou excluir informações 
+sobre as salas de aula).
+O coordenador seleciona a opção desejada e realiza as alterações necessárias.
+O sistema atualiza as informações sobre os professores cadastrados.
+  
+**4. Gerenciar disciplinas:**
+O coordenador acessa o sistema para gerenciar as disciplinas.
+O sistema apresenta as opções de gerenciamento (adicionar, editar ou excluir informações 
+sobre as salas de aula).
+O coordenador seleciona a opção desejada e realiza as alterações necessárias.
+O sistema atualiza as informações sobre as disciplinas.
+  
+**5. Gerenciar turmas:**
+O coordenador acessa o sistema para gerenciar as turmas.
+O sistema apresenta as opções de gerenciamento (adicionar, editar ou excluir informações 
+sobre as salas de aula).
+O coordenador seleciona a opção desejada e realiza as alterações necessárias.
+O sistema atualiza as informações sobre as turmas.
 
 # Protótipos de tela
 

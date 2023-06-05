@@ -49,7 +49,7 @@ export class ProfessorFormComponent implements OnInit{
         this.router.navigate(['/professor'])
       },
       error: (e) => console.log(e),
-      complete: () => console.log('complete')
+      complete: () => window.alert("Professor Adicionado com sucesso!")
     })
   }
 

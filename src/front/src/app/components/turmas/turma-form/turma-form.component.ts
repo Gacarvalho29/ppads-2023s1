@@ -49,7 +49,7 @@ export class TurmaFormComponent implements OnInit{
         this.router.navigate(['/turma'])
       },
       error: (e) => console.log(e),
-      complete: () => console.log('complete')
+      complete: () => window.alert("Turma Adicionada com sucesso!")
     })
   }
 

@@ -50,7 +50,7 @@ export class AlunoFormComponent implements OnInit{
         this.router.navigate(['/aluno'])
       },
       error: (e) => console.log(e),
-      complete: () => console.log('complete')
+      complete: () => window.alert("Aluno adicionado com sucesso!")
     })
   }
 

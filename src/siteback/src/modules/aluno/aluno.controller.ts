@@ -31,14 +31,14 @@ export class AlunoController {
     return this.alunoService.delete(id)
   }
 
-  @Post('presenca/:cod_aluno')
-  async addPresenca(@Param('cod_aluno') cod_aluno: string) {
-    return this.alunoService.addPresenca(cod_aluno);
+  @Post('presenca/:cod_aluno/:nome_aluno')
+  async addPresenca(@Param('cod_aluno') cod_aluno: string, @Param('nome_aluno') nome_aluno: string) {
+    return this.alunoService.addPresenca(cod_aluno, nome_aluno);
   }
 
-  @Post('falta/:cod_aluno')
-  async addFalta(@Param('cod_aluno') cod_aluno: string) {
-    return this.alunoService.addFalta(cod_aluno);
+  @Post('falta/:cod_aluno/:nome_aluno')
+  async addFalta(@Param('cod_aluno') cod_aluno: string, @Param('nome_aluno') nome_aluno: string) {
+    return this.alunoService.addFalta(cod_aluno, nome_aluno);
   }
 
 }

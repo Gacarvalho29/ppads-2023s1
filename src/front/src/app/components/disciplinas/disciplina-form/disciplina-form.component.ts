@@ -46,7 +46,7 @@ export class DisciplinaFormComponent implements OnInit{
         this.router.navigate(['/disciplina'])
       },
       error: (e) => console.log(e),
-      complete: () => console.log('complete')
+      complete: () => window.alert("Disciplina Adicionada com sucesso!")
     })
   }
 

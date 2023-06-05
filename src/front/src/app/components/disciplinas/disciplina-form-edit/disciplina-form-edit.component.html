@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-sm4 offset-md-5">
+    <div class="card card-body">
+      <form (submit)="updateDisciplina()">
+        <div class="form-group">
+          <input type="text" name="nome_disciplina" [(ngModel)]="disciplina.nome_disciplina" class="form-control" placeholder="Nome da Disciplina" autofocus>
+        </div>
+        <div class="form-group">
+          <input type="number" name="cod_disciplina" [(ngModel)]="disciplina.cod_disciplina" class="form-control" placeholder="Código da Disciplina" autofocus>
+        </div>
+        <button class="btn btn-primary btn-block">
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
