@@ -20,10 +20,10 @@
           dataNasc: {{ aluno.data_nasc }}
         </li>
       </ul>
-      <button class="btn btn-success" (click)="addPresenca(aluno.cod_aluno!)">
+      <button class="btn btn-success" (click)="addPresenca(aluno.cod_aluno!, aluno.nome_aluno)">
         Presente
       </button>
-      <button class="btn btn-warning" (click)="addFalta(aluno.cod_aluno!)">
+      <button class="btn btn-warning" (click)="addFalta(aluno.cod_aluno!, aluno.nome_aluno)">
         Faltou
       </button>
       <br><br>

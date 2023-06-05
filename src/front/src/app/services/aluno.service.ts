@@ -9,8 +9,8 @@ import { PresencaDTO } from '../dto/presenca.dto';
 })
 export class AlunoService {
 
-  BASE_URL: string = 'https://ppads-2023s1-production.up.railway.app';
-  // BASE_URL: string = 'http://localhost:3000';
+  // BASE_URL: string = 'https://ppads-2023s1-production.up.railway.app';
+  BASE_URL: string = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
@@ -34,12 +34,12 @@ export class AlunoService {
     return this.http.delete<AlunoDto>(`${this.BASE_URL}/aluno/delete/${id}`)
   }
 
-  addPresenca(cod_aluno: string | undefined): Observable<PresencaDTO> {
-    return this.http.post<PresencaDTO>(`${this.BASE_URL}/aluno/presenca/${cod_aluno}`, cod_aluno);
+  addPresenca(cod_aluno: string | undefined, nome_aluno: string | undefined): Observable<PresencaDTO> {
+    return this.http.post<PresencaDTO>(`${this.BASE_URL}/aluno/presenca/${cod_aluno}/${nome_aluno}`, [cod_aluno, nome_aluno]);
   }
   
-  addFalta(cod_aluno: string | undefined): Observable<PresencaDTO> {
-    return this.http.post<PresencaDTO>(`${this.BASE_URL}/aluno/falta/${cod_aluno}`, cod_aluno);
+  addFalta(cod_aluno: string | undefined, nome_aluno: string | undefined): Observable<PresencaDTO> {
+    return this.http.post<PresencaDTO>(`${this.BASE_URL}/aluno/falta/${cod_aluno}/${nome_aluno}`, [cod_aluno, nome_aluno]);
   }  
 
 }

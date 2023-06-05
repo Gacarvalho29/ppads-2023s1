@@ -9,6 +9,7 @@ import { ProfessorFormComponent } from './components/professores/professor-form/
 
 import { DisciplinaListComponent } from './components/disciplinas/disciplina-list/disciplina-list.component';
 import { DisciplinaFormComponent } from './components/disciplinas/disciplina-form/disciplina-form.component';
+import { DisciplinaFormEditComponent } from './components/disciplinas/disciplina-form-edit/disciplina-form-edit.component';
 
 import { TurmaListComponent } from './components/turmas/turma-list/turma-list.component';
 import { TurmaFormComponent } from './components/turmas/turma-form/turma-form.component';
@@ -76,7 +77,7 @@ const routes: Routes = [
   },
   {
     path: 'disciplina/edit/:id',
-    component: DisciplinaFormComponent
+    component: DisciplinaFormEditComponent
   },
 
   //TURMAS

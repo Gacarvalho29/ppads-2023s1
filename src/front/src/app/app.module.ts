@@ -19,6 +19,7 @@ import { PresencaListComponent } from './components/presencas/presenca-list/pres
 import { HomeComponent } from './components/home/home.component';
 import { CoordMenuComponent } from './components/coord-menu/coord-menu.component';
 import { ProfMenuComponent } from './components/prof-menu/prof-menu.component';
+import { DisciplinaFormEditComponent } from './components/disciplinas/disciplina-form-edit/disciplina-form-edit.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ProfMenuComponent } from './components/prof-menu/prof-menu.component';
     HomeComponent,
     CoordMenuComponent,
     ProfMenuComponent,
+    DisciplinaFormEditComponent,
   ],
   imports: [
     BrowserModule,

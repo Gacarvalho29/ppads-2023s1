@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { NotFoundException } from '@nestjs/common/exceptions';
 import { PrismaService } from 'src/database/prisma.service';
 import { AlunoDto } from './dto/aluno.dto';
+import { Prisma } from '@prisma/client';
 
 @Injectable()
 export class AlunoService {
@@ -64,7 +65,7 @@ export class AlunoService {
 
   }
 
-  async addPresenca(cod_aluno: string) {
+  async addPresenca(cod_aluno: string, nome_aluno: string) {
     const aluno = await this.prisma.aluno.findUnique({
       where: { cod_aluno },
     });
@@ -74,31 +75,31 @@ export class AlunoService {
     const presenca = await this.prisma.presenca.create({
       data: {
         cod_aluno,
+        nome_aluno,
         cod_disciplina:1,
-        data_presenca: new Date(),
+        data_presenca: new Date().toLocaleDateString(),
         status: 'presente',
       },
     });
     return presenca;
   }
   
-  async addFalta(cod_aluno: string) {
-    const aluno = await this.prisma.aluno.findUnique({
-      where: { cod_aluno },
-    });
-    if (!aluno) {
-      throw new NotFoundException('Aluno não encontrado');
-    }
-    const falta = await this.prisma.presenca.create({
-      data: {
-        cod_aluno,
-        cod_disciplina: 1,
-        data_presenca: new Date(),
-        status: 'falta',
-      },
-    });
-    return falta;
+  async addFalta(cod_aluno: string, nome_aluno: string) {
+      const aluno = await this.prisma.aluno.findUnique({
+        where: { cod_aluno },
+      });
+      if (!aluno) {
+        throw new NotFoundException('Aluno não encontrado');
+      }
+      const falta = await this.prisma.presenca.create({
+        data: {
+          cod_aluno,
+          nome_aluno,
+          cod_disciplina: 1,
+          data_presenca: new Date().toLocaleDateString(),
+          status: 'falta',
+        },
+      });
+      return falta;
   }
-  
-  
 }

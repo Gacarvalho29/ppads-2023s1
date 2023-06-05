@@ -82,9 +82,10 @@ model Aula {
 
 model Presenca {
   id             String   @unique @default(uuid())
+  nome_aluno     String
   cod_aluno      String
   cod_disciplina Int
-  data_presenca  DateTime
+  data_presenca  String 
   status         String
 
   @@id([cod_aluno, cod_disciplina, data_presenca])
