@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlunoService } from 'src/app/services/aluno.service';
 import { AlunoDto } from 'src/app/dto/aluno.dto';
-// import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-aluno-list',
@@ -12,7 +11,7 @@ export class AlunoListComponent implements OnInit{
 
   alunos: AlunoDto[] = [];
 
-  constructor(private alunoService: AlunoService/** , private snackBar: MatSnackBar*/){}
+  constructor(private alunoService: AlunoService){}
 
   getAlunos(){
     this.alunoService.getAlunos()
